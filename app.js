@@ -7,13 +7,14 @@ const onerror = require('koa-onerror');
 const bodyparser = require('koa-bodyparser')();
 const logger = require('koa-logger');
 
-const index = require('./routes/index');
-const users = require('./routes/users');
+// const {userRouter} = require('./routes/router.export');
+const userRouter = require('./routes/api/user_router');
+// const index = require('./routes/index');
+// const users = require('./routes/users');
 
 //log工具
 const logUtil = require('./utils/log_util');
-// api
-const api = require('./routes/api');
+
 //格式化输出
 const response_formatter = require('./middlewares/response_formatter');
 
@@ -52,19 +53,11 @@ app.use(async (ctx, next) => {
   }
 });
 
-// user api
-//添加格式化处理响应结果的中间件，在添加路由之前调用
-//仅对/api开头的url进行格式化处理
-app.use(response_formatter('^/api'));
 
-router.use('/', index.routes(), index.allowedMethods());
-router.use('/users', users.routes(), users.allowedMethods());
-router.use('/api', api.routes(), api.allowedMethods());
-// 不调用此句将无法得到结果
-app.use(router.routes(), router.allowedMethods());
 // routes
 // app.use(index.routes(), index.allowedMethods());
 // app.use(users.routes(), users.allowedMethods());
-
-
+app.use(userRouter.routes());
+app.use(userRouter.allowedMethods());
+// console.log("userRouter----->",userRouter);
 module.exports = app;
