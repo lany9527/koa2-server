@@ -1,0 +1,29 @@
+[2017-04-25 14:35:48.378] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: POST
+request originalUrl:  /api/users/registerUser
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{}
+response time: 2
+err name: TypeError
+err message: Cannot read property 'body' of undefined
+err stack: TypeError: Cannot read property 'body' of undefined
+    at exports.registerUser (/home/littlestone/Documents/learn/node/koa2/koa2_server/app/controllers/user_controller.js:9:40)
+    at dispatch (/home/littlestone/Documents/learn/node/koa2/koa2_server/node_modules/._koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/littlestone/Documents/learn/node/koa2/koa2_server/node_modules/._koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/littlestone/Documents/learn/node/koa2/koa2_server/node_modules/._koa-router@7.1.1@koa-router/lib/router.js:326:16
+    at dispatch (/home/littlestone/Documents/learn/node/koa2/koa2_server/node_modules/._koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/littlestone/Documents/learn/node/koa2/koa2_server/node_modules/._koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at allowedMethods (/home/littlestone/Documents/learn/node/koa2/koa2_server/node_modules/._koa-router@7.1.1@koa-router/lib/router.js:366:12)
+    at dispatch (/home/littlestone/Documents/learn/node/koa2/koa2_server/node_modules/._koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/littlestone/Documents/learn/node/koa2/koa2_server/node_modules/._koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/littlestone/Documents/learn/node/koa2/koa2_server/node_modules/._koa-router@7.1.1@koa-router/lib/router.js:326:16
+    at dispatch (/home/littlestone/Documents/learn/node/koa2/koa2_server/node_modules/._koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at /home/littlestone/Documents/learn/node/koa2/koa2_server/node_modules/._koa-compose@3.2.1@koa-compose/index.js:36:12
+    at dispatch (/home/littlestone/Documents/learn/node/koa2/koa2_server/node_modules/._koa-router@7.1.1@koa-router/lib/router.js:331:31)
+    at dispatch (/home/littlestone/Documents/learn/node/koa2/koa2_server/node_modules/._koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/littlestone/Documents/learn/node/koa2/koa2_server/node_modules/._koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/littlestone/Documents/learn/node/koa2/koa2_server/middlewares/response_formatter.js:28:19
+*************** error log end ***************
+

@@ -1,0 +1,60 @@
+[2017-04-25 14:23:17.759] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 1119
+response status: 200
+response body: 
+"<!DOCTYPE html><html><head><title>koa2 title</title><link rel=\"stylesheet\" href=\"/stylesheets/style.css\"></head><body><h1>koa2 title</h1><p>Welcome to koa2 title</p></body></html>"
+*************** response log end ***************
+
+[2017-04-25 14:23:17.937] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /favicon.ico
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 0
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-04-25 14:24:59.279] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 257
+response status: 200
+response body: 
+"<!DOCTYPE html><html><head><title>koa2 title</title><link rel=\"stylesheet\" href=\"/stylesheets/style.css\"></head><body><h1>koa2 title</h1><p>Welcome to koa2 title</p></body></html>"
+*************** response log end ***************
+
+[2017-04-25 14:32:05.519] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 2
+response status: 200
+response body: 
+{"code":0,"message":"success","data":{"username":"江户川柯南","age":12}}
+*************** response log end ***************
+
+[2017-04-25 14:34:41.920] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 1
+response status: 200
+response body: 
+{"code":0,"message":"success","data":{"username":"江户川柯南","age":12}}
+*************** response log end ***************
+
